@@ -146,7 +146,7 @@ const App = () => {
             onClick={handlePlayBtn} ref={btnRef}
             id='readyBtn' type="button" className='p-4 my-3 rounded-full bg-linear-to-br from-rose-500 to-pink-400'><FaPlay className='text-xl'/></button>
             <span className={`${start ? 'opacity-100' : 'opacity-0'}`}>Now Scroll Smothly to the bottom </span>
-            <FaArrowDown className='mt-2 animate-bounce'/>
+            <span className={`${start ? 'opacity-100' : 'opacity-0'}`}><FaArrowDown className='mt-2 animate-bounce'/></span>
         </div>
         <div ref={scrollRef} className='space-y-[700px] flex flex-col'>
             <p className='opacity-0 scale-0 self-center -translate-y-14'>It all started 10 years ago!</p>
